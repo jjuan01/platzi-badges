@@ -1,16 +1,19 @@
-// const element = document.createElement('h1');
-// element.innerText = 'Hello, Platzi Badges!';
+// import de elemento con javascript
+// const element = document.createElement("h1");
+// element.innerText = "Hello, Platzi Badges!";
 
-// const container = document.getElementById('app');
+// const container = document.getElementById("app");
 
 // container.appendChild(element);
 
+// import de elemento con react
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 
-const element = <h1>Hello, Platzi Badges!</h1>;
+import './global.css';
+import BadgeNew from './pages/BadgeNew';
 
 const container = document.getElementById('app');
 
-// ReactDOM.render(__qué__, __dónde__);
-ReactDOM.render(element, container);
+ReactDOM.render(<BadgeNew />, container);
