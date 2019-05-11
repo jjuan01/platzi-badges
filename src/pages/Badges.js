@@ -63,6 +63,12 @@ class Badges extends React.Component {
 				</div>
 				<div className='Badges__container'>
 					<div className='Badges__buttons'>
+						{/* Componente de React Router que permite 
+          intercetar el link para que no haya que 
+          recargar toda la pagina 
+          
+          Se usa junto a BrowserRouter 
+          Switch y Route */}
 						<Link
 							to='/badges/new'
 							className='btn btn-primary'
