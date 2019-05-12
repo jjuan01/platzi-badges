@@ -2,7 +2,9 @@ import React from 'react';
 
 import './styles/BadgeNew.css';
 import header from '../images/badge-header.svg';
-import Navbar from '../components/Navbar';
+// NAVBAR SE LLAMA AHORA DESDE
+// EL LAYOUT PARA CADA PAGINA
+// import Navbar from '../components/Navbar';
 import BadgeForm from '../components/BadgeForm';
 import Badge from '../components/Badge';
 
@@ -35,8 +37,10 @@ class BadgeNew extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<Navbar />
+			<React.Fragment>
+				{/* NAVBAR SE LLAMA AHORA DESDE
+        EL LAYOUT PARA CADA PAGINA */}
+				{/* <Navbar /> */}
 				<div className='BadgeNew__hero'>
 					<img
 						className='img-fluid'
@@ -72,7 +76,7 @@ class BadgeNew extends React.Component {
 						</div>
 					</div>
 				</div>
-			</div>
+			</React.Fragment>
 		);
 	}
 }
