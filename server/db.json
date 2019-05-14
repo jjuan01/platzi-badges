@@ -2,11 +2,11 @@
   "badges": [
     {
       "id": "2de30c42-9deb-40fc-a41f-05e62b5939a7",
-      "firstName": "Freda",
-      "lastName": "Grady",
-      "email": "Leann_Berge@gmail.com",
+      "firstName": "Karlee",
+      "lastName": "Satterfield",
+      "email": "karlee@gmail.com",
       "jobTitle": "Legacy Brand Director",
-      "twitter": "FredaGrady22221-7573",
+      "twitter": "pruebedit",
       "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
     },
     {
@@ -456,6 +456,30 @@
       "jobTitle": "Desarrollador",
       "twitter": "jpleyvat",
       "id": "h_GND-6"
+    },
+    {
+      "firstName": "Juan",
+      "lastName": "Leyva",
+      "email": "jpleyvat@gmail.com",
+      "jobTitle": "Desarrollador",
+      "twitter": "jpleyvat",
+      "id": "JBhKB39"
+    },
+    {
+      "firstName": "Carolynn",
+      "lastName": "Kaufman",
+      "email": "carolynn@example.com",
+      "jobTitle": "Lawyer",
+      "twitter": "sparragus",
+      "id": "vYDrJ64"
+    },
+    {
+      "firstName": "snoopy",
+      "lastName": "kaufman",
+      "email": "snoopy@example",
+      "jobTitle": "super dog",
+      "twitter": "superdog",
+      "id": "jpHIVwq"
     }
   ]
 }
