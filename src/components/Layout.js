@@ -9,7 +9,7 @@ function Layout(props) {
 	return (
 		<React.Fragment>
 			<Navbar />
-			{props.children}
+			{children}
 		</React.Fragment>
 	);
 }

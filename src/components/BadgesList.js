@@ -43,7 +43,6 @@ class BadgesList extends React.Component {
 				<div>
 					<h3>No badges were found</h3>
 					<Link
-						to
 						className='btn btn-primary'
 						to='/badges/new'
 					>
@@ -60,7 +59,7 @@ class BadgesList extends React.Component {
 							<li key={badge.id}>
 								<Link
 									className='text-reset text-decoration-none'
-									to={`/badges/${badge.id}/edit`}
+									to={`/badges/${badge.id}`}
 								>
 									<BadgesListItem badge={badge} />
 								</Link>

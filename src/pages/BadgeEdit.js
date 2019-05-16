@@ -8,7 +8,7 @@ import header from '../images/platziconf-logo.svg';
 import BadgeForm from '../components/BadgeForm';
 import Badge from '../components/Badge';
 import PageLoading from '../components/PageLoading';
-import PageError from '../components/PageError';
+// import PageError from '../components/PageError';
 import api from '../api';
 import { truncate } from 'fs';
 

@@ -11,6 +11,7 @@ import BadgesList from '../components/BadgesList';
 import PageLoading from '../components/PageLoading';
 import PageError from '../components/PageError';
 import api from '../api';
+import MiniLoader from '../components/MiniLoader.';
 
 class Badges extends React.Component {
 	// Metodos que se ejecutan
@@ -100,6 +101,18 @@ class Badges extends React.Component {
 
 	componentDidMount() {
 		this.fetchData();
+
+		// Polling: Cada determinado tiempo
+		// se busquen   ciertos datos y se
+		// actualicen
+		this.intervalId = setInterval(
+			this.fetchData,
+			5000
+		);
+	}
+
+	componentWillUnmount() {
+		clearInterval(this.intervalId);
 	}
 
 	fetchData = async () => {
@@ -120,7 +133,10 @@ class Badges extends React.Component {
 	};
 
 	render() {
-		if (this.state.loading === true) {
+		if (
+			this.state.loading === true &&
+			!this.state.data
+		) {
 			return <PageLoading>/</PageLoading>;
 		}
 
@@ -163,13 +179,12 @@ class Badges extends React.Component {
 						</Link>
 					</div>
 
-					<div className='Badges__list'>
-						<div className='Badges__container'>
-							<BadgesList
-								badges={this.state.data}
-							/>
-						</div>
-					</div>
+					{/* <div className='Badges__list'>
+						<div className='Badges__container'> */}
+					<BadgesList badges={this.state.data} />
+					{/* </div> */}
+					{/* </div> */}
+					{this.state.loading && <MiniLoader />}
 				</div>
 			</React.Fragment>
 		);
